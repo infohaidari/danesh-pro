@@ -1,0 +1,166 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* IRANSans Web Font Definitions (Local Offline Assets for 100% Browser Support) */
+@font-face {
+  font-family: 'IRANSans';
+  src: url('/fonts/iransans/IRANSansUltraLight.eot');
+  src: url('/fonts/iransans/IRANSansUltraLight.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/iransans/IRANSansUltraLight.woff2') format('woff2'),
+       url('/fonts/iransans/IRANSansUltraLight.woff') format('woff'),
+       url('/fonts/iransans/IRANSansUltraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IRANSans';
+  src: url('/fonts/iransans/IRANSansLight.eot');
+  src: url('/fonts/iransans/IRANSansLight.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/iransans/IRANSansLight.woff2') format('woff2'),
+       url('/fonts/iransans/IRANSansLight.woff') format('woff'),
+       url('/fonts/iransans/IRANSansLight.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IRANSans';
+  src: url('/fonts/iransans/IRANSans.eot');
+  src: url('/fonts/iransans/IRANSans.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/iransans/IRANSans.woff2') format('woff2'),
+       url('/fonts/iransans/IRANSans.woff') format('woff'),
+       url('/fonts/iransans/IRANSans.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IRANSans';
+  src: url('/fonts/iransans/IRANSansMedium.eot');
+  src: url('/fonts/iransans/IRANSansMedium.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/iransans/IRANSansMedium.woff2') format('woff2'),
+       url('/fonts/iransans/IRANSansMedium.woff') format('woff'),
+       url('/fonts/iransans/IRANSansMedium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IRANSans';
+  src: url('/fonts/iransans/IRANSansBold.eot');
+  src: url('/fonts/iransans/IRANSansBold.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/iransans/IRANSansBold.woff2') format('woff2'),
+       url('/fonts/iransans/IRANSansBold.woff') format('woff'),
+       url('/fonts/iransans/IRANSansBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IRANSans';
+  src: url('/fonts/iransans/IRANSansBold.eot');
+  src: url('/fonts/iransans/IRANSansBold.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/iransans/IRANSansBold.woff2') format('woff2'),
+       url('/fonts/iransans/IRANSansBold.woff') format('woff'),
+       url('/fonts/iransans/IRANSansBold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IRANSans';
+  src: url('/fonts/iransans/IRANSansBold.eot');
+  src: url('/fonts/iransans/IRANSansBold.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/iransans/IRANSansBold.woff2') format('woff2'),
+       url('/fonts/iransans/IRANSansBold.woff') format('woff'),
+       url('/fonts/iransans/IRANSansBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IRANSans';
+  src: url('/fonts/iransans/IRANSansBold.eot');
+  src: url('/fonts/iransans/IRANSansBold.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/iransans/IRANSansBold.woff2') format('woff2'),
+       url('/fonts/iransans/IRANSansBold.woff') format('woff'),
+       url('/fonts/iransans/IRANSansBold.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-sans: 'IRANSans', 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+@keyframes progressLinear {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.animate-progress-5s {
+  animation: progressLinear 5s linear forwards;
+  will-change: width;
+}
+
+.animate-progress-7s {
+  animation: progressLinear 7s linear forwards;
+  will-change: width;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'IRANSans', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  html[lang="fa"],
+  html[dir="rtl"],
+  [dir="rtl"] {
+    font-family: 'IRANSans', system-ui, -apple-system, sans-serif;
+  }
+
+  html[lang="en"],
+  html[dir="ltr"] {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: inherit;
+  }
+
+  button, input, optgroup, select, textarea {
+    font-family: inherit;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(150, 150, 150, 0.35);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(150, 150, 150, 0.55);
+}
