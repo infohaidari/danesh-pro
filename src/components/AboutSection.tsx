@@ -150,7 +150,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ branchNumber }) => {
   if (branchNumber === 1) {
     titleFa = 'درباره مدرسه غیردولتی باران دانش ۱';
     titleEn = 'About Baran Danesh School 1';
-    subtitleFa = 'پردیس تخصصی دوره‌های پیش‌دبستان و دبستان با تمرکز بر یادگیری فعال، خلاقیت و طرح پیشگام کیف در مدرسه';
+    subtitleFa = 'پردیس تخصصی دوره‌های پیش‌دبستان و دبستان با تمرکز بر یادگیری فعال و خلاقیت';
     subtitleEn = 'Dedicated campus for preschool and elementary education focusing on active inquiry and child development at Branch 1';
   } else if (branchNumber === 2) {
     titleFa = 'درباره مدرسه غیردولتی باران دانش ۲';

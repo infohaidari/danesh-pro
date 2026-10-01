@@ -53,12 +53,12 @@ export const FaqSection: React.FC<FaqSectionProps> = ({ branchNumber }) => {
   if (branchNumber === 1) {
     titleFa = 'سوالات پر تکرار مدرسه باران دانش ۱';
     titleEn = 'Frequently Asked Questions - Baran Danesh 1';
-    subtitleFa = 'پاسخ به سوالات اولیای گرامی در مورد اپلیکیشن مدرسه، تکالیف، شهریه، کارنامه و حضور و غیاب شعبه ۱';
+    subtitleFa = 'پاسخ به سوالات اولیای گرامی در مورد اپلیکیشن مدرسه، تکالیف، شهریه، کارنامه و حضور و غیاب ';
     subtitleEn = 'Answers regarding app features, homework, tuition, report cards, and attendance at Branch 1';
   } else if (branchNumber === 2) {
     titleFa = 'سوالات پر تکرار مدرسه باران دانش ۲';
     titleEn = 'Frequently Asked Questions - Baran Danesh 2';
-    subtitleFa = 'پاسخ به پرسش‌های اولیاء پیرامون ساعات مدرسه، ارتباط با معلمان، تکالیف، لوازم‌التحریر و اطلاعیه‌ها در شعبه ۲';
+    subtitleFa = 'پاسخ به پرسش‌های اولیاء پیرامون ساعات مدرسه، ارتباط با معلمان، تکالیف، لوازم‌التحریر و اطلاعیه‌ها';
     subtitleEn = 'Answers regarding school hours, teacher communication, homework, supplies, and notices at Branch 2';
   }
 
