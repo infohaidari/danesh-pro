@@ -1,4 +1,5 @@
 import React from 'react';
+import { SCHOOL_IMAGES } from '../data/schoolData';
 
 export interface SchoolLogoProps {
   className?: string;
@@ -26,12 +27,9 @@ export const SchoolLogo: React.FC<SchoolLogoProps> = ({
         aria-label="لوگو باران دانش"
       >
         <img
-          src="/baran_logo.jpg"
+          src={SCHOOL_IMAGES.baranLogo}
           alt="لوگو باران دانش"
           className="w-full h-full object-contain p-0.5 bg-white"
-          onError={(e) => {
-            (e.target as HTMLImageElement).src = '/src/assets/images/baran_logo.jpg';
-          }}
         />
       </div>
     );
@@ -44,12 +42,9 @@ export const SchoolLogo: React.FC<SchoolLogoProps> = ({
       aria-label="لوگو نگین دانش"
     >
       <img
-        src="/negin_logo.jpg"
+        src={SCHOOL_IMAGES.neginLogo}
         alt="لوگو نگین دانش"
         className="w-full h-full object-contain p-0.5 bg-white"
-        onError={(e) => {
-          (e.target as HTMLImageElement).src = '/src/assets/images/negin_logo.jpg';
-        }}
       />
     </div>
   );

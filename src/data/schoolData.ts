@@ -1,5 +1,22 @@
 import { FacilityItem, FaqItem, GradeInfo, NewsItem } from '../types';
 
+// Vite only bundles assets that are imported. String paths like
+// `/src/assets/...` work in dev but are missing from the production build.
+const imageModules = import.meta.glob('../assets/images/*.{jpg,jpeg,png,webp}', {
+  eager: true,
+  import: 'default',
+}) as Record<string, string>;
+
+const img = (filename: string): string => {
+  const entry = Object.entries(imageModules).find(([path]) =>
+    path.endsWith(`/${filename}`),
+  );
+  if (!entry) {
+    throw new Error(`Missing image asset: ${filename}`);
+  }
+  return entry[1];
+};
+
 export const SCHOOL_IMAGES = {
   hero1: '/src/assets/images/negin2.jpg',
   hero2: '/src/assets/images/negin3.jpg',
