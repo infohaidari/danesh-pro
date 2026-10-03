@@ -42,6 +42,9 @@ export const SCHOOL_IMAGES = {
   baran22: '/src/assets/images/baran1-22.jpg',
   baran23: '/src/assets/images/baran1-24.jpg',
   baran24: '/src/assets/images/baran1-26.jpg',
+  baran25: '/src/assets/images/baran2-6.jpeg',
+  baran26: '/src/assets/images/baran2-5.jpeg',
+  baran27: '/src/assets/images/baran2-8.jpg',
   baranLogo: '/baran_logo.jpg',
   neginLogo: '/negin_logo.jpg',
 };
@@ -385,7 +388,7 @@ export const FACILITIES_DATA_BRANCH_2: FacilityItem[] = [
     descFa: 'در راستای افزایش ایمنی، نظم و ارامش محیط اموزشی و با هدف ایجاد فضای مناسب تر برای دانش اموزان عزیز',
     descEn: 'In order to enhance safety, discipline, and peace in the educational environment, creating a better space for our dear students.',
     iconName: 'Cctv',
-    imageUrl: SCHOOL_IMAGES.baran12,
+    imageUrl: SCHOOL_IMAGES.baran25,
   },
   {
     id: 2,
@@ -412,7 +415,7 @@ export const FACILITIES_DATA_BRANCH_2: FacilityItem[] = [
     descFa: 'استفاده از فناوری های نوین، فرصتی برای ایجاد کلاس های پویا، تعاملی و جذاب فراهم می کند و به دانش اموزان کمک می کند مفاهیم درسی را با شیوه های نوین و تجربه محور بیاموزند.',
     descEn: 'Using modern technologies provides an opportunity to create dynamic, interactive, and engaging classes, helping students learn curriculum concepts through modern and experience-based methods.',
     iconName: 'Monitor',
-    imageUrl: SCHOOL_IMAGES.baran10,
+    imageUrl: SCHOOL_IMAGES.baran26,
   },
   {
     id: 5,
@@ -430,7 +433,7 @@ export const FACILITIES_DATA_BRANCH_2: FacilityItem[] = [
     descFa: 'برگزاری جشن های خاص در جهت فراهم کردن فضایی شاد و دلنشین برای دانش اموزان عزیز',
     descEn: 'Organizing special celebrations to provide a joyful and pleasant environment for our dear students.',
     iconName: 'PartyPopper',
-    imageUrl: SCHOOL_IMAGES.baran15,
+    imageUrl: SCHOOL_IMAGES.baran27,
   },
 ];
 
